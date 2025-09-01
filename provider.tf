@@ -1,5 +1,10 @@
 provider "aws" {}
 
+terraform {
+  backend "s3" {}
+}
+
+
 
 # resource "aws_instance" "web" {
 #     ami           = "ami-09c813fb71547fc4f"
