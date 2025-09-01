@@ -29,7 +29,7 @@ instances = {
     mongodb = {
         instance_type = "t3.medium"
     }
-}}
+}
 
 env = "prod"
 ami = "ami-09c813fb71547fc4f"
