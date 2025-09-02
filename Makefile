@@ -1,6 +1,6 @@
 dev-init:
 	git pull
- 	rm -f .terraform/terraform.tfstate # Remove existing state file. Because when you first apply on dev, it creates state file in local. When you switch to prod, it should not use local state file again causing conflict.
+	rm -f .terraform/terraform.tfstate # Remove existing state file. Because when you first apply on dev, it creates state file in local. When you switch to prod, it should not use local state file again causing conflict.
 	terraform init -backend-config=./environments/dev/state.tfvars
 
 dev-plan:
